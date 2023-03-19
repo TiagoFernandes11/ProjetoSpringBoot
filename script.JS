@@ -5,6 +5,14 @@ const Iemail = document.querySelector(".email");
 const Isenha = document.querySelector(".senha");
 const Itel = document.querySelector(".tel");
 
+function limpar () {
+    Inome.value = "";
+    Iemail.value = "";
+    Isenha.value = "";
+    Itel.value = "";
+
+};
+
 function cadastrar() {
     fetch("http://localhost:8080/cadastrar",
     {
@@ -24,11 +32,7 @@ formulario.addEventListener("submit", function (event) {
     event.preventDefault();
     console.log(Inome.value);
 
-    const dados = {
-        nome: Inome.value,
-        email: Iemail.value,
-        senha: Isenha.value,
-        telefone: Itel.value
-    };
+    cadastrar();
+    limpar();
 
 });
