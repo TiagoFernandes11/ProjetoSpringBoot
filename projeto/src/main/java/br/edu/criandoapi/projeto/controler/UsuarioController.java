@@ -19,7 +19,7 @@ public class UsuarioController {
     @Autowired
     private IUsuario dao;
 
-    @GetMapping("/usuarios")
+    @GetMapping
     public List<Usuario> texto() {
         return (List<Usuario>) dao.findAll();
     }
