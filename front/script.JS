@@ -14,14 +14,19 @@ function limpar () {
 };
 
 function cadastrar() {
-    fetch("http://localhost:8080/cadastrar",
+    fetch("http://localhost:8080/usuarios",
     {
         headers: {
             'Accept' : 'application/json',
             'Content-Type' : 'application/json'
         },
         method: "POST",
-        body: JSON.stringify({a:1,b:2})
+        body: JSON.stringify({
+            nome : Inome.value,
+            email : Iemail.value,
+            senha : Isenha.value,
+            tel : Itel.value
+        })
     })
     .then(function (res) {console.log(res)})
     .catch(function (res) {console.log(res)})
