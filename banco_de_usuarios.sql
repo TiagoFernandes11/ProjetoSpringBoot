@@ -7,7 +7,7 @@ use banco_de_usuarios;
 create table usuario(
 id int(3) primary key auto_increment,
 nome varchar(50) not null,
-email varchar(30) not null unique,
+email varchar(50) not null unique,
 senha text(50) not null,
 tel varchar(12) not null unique
 );
