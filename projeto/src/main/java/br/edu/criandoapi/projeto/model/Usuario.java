@@ -26,8 +26,6 @@ public class Usuario {
     @Column(name = "senha", length = 50, columnDefinition = "TEXT", nullable = false)
     private String senha;
 
-    @Column(name = "tel", length = 12, nullable = false)
-    private String tel;
 
     public void setId(int id) {
         this.id = id;
@@ -42,10 +40,6 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public void setTel(String tel) {
-        this.tel = tel;
-    }
-
     public int getId() {
         return id;
     }
@@ -58,11 +52,6 @@ public class Usuario {
     public String getSenha() {
         return senha;
     }
-
-    public String getTel() {
-        return tel;
-    }
-
 
     public String getNome() {
         return nome;

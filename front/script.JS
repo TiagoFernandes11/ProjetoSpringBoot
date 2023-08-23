@@ -24,8 +24,7 @@ function cadastrar() {
         body: JSON.stringify({
             nome : Inome.value,
             email : Iemail.value,
-            senha : Isenha.value,
-            tel : Itel.value
+            senha : Isenha.value
         })
     })
     .then(function (res) {console.log(res)})

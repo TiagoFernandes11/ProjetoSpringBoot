@@ -8,10 +8,9 @@ create table usuario(
 id int(3) primary key auto_increment,
 nome varchar(50) not null,
 email varchar(50) not null unique,
-senha text(50) not null,
-tel varchar(12) not null unique
+senha text(50) not null
 );
 
 select * from usuario;
 
-insert into usuario values(null, 'Tiago Fernandes Ribeiro', 'tiagofernandesribeiro@yahoo.com.br', 'senha123', '99999-5979');
+insert into usuario values(null, 'Tiago Fernandes Ribeiro', 'tiagofernandesribeiro@yahoo.com.br', 'senha123');
